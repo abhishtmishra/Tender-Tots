@@ -1,0 +1,370 @@
+/* CSS Reset */
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+/* CSS Variable */
+:root{
+    --navbar-height: 59px;
+}
+
+/* Navigation Bar  */
+#navbar{
+    display: flex;
+    align-items: center;
+    position: relative;
+    top:0px;
+    height: 112px;
+}
+
+/* Logo and Image  */
+#logo{
+    margin: 9px 4px;
+}
+#logo img{
+    margin: 0px 2px;
+    height: 211.6px;   /*It was 317.5 x 280 originally*/
+    width: 186.67px;
+}
+/* Navigation Bar: List Styling  */
+#navbar ul{
+    display: flex;
+    font-family: 'Knewave', cursive;
+    font-family: 'Righteous', cursive;
+}
+#navbar::before{
+   content:" ";
+   background-color: black;
+   position: absolute;
+   top:0px;
+   left:0px;
+   height: 100%;
+   width: 100%;
+   z-index: -1;
+   opacity:0.45;
+
+}
+#navbar ul li{
+    padding: 2px 3px;
+    list-style: none;
+    font-size: 1.43rem;
+}
+#navbar ul li a{
+    color: white;
+    display:block;
+    padding: 3px 32px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+#navbar ul li a:hover,
+#navbar ul li a.active{
+    color: black;
+    background-color : white;
+}
+.right {
+    position: absolute;
+    right: 0px;
+    top: 45px;
+    display: inline-block;
+    /* border: 2px solid yellow;*/
+}
+.btnright {
+    font-family: 'Knewave', cursive;
+    font-family: 'Righteous', cursive;
+    margin: 0px 25px;
+    color: white;
+    background-image:linear-gradient(135deg, #71b7e6, #9b59b6);
+    /* box-shadow: 0 1px 2px rgb(0 0 0), 0 1px 2px rgb(0 0 0);      original version */
+    box-shadow: 0 10px 10px rgba(0,0,0,0.25);
+    padding: 6px 34px;
+    /* border: 2px solid black; */
+    border-radius: 23px;
+    font-size: 1.37rem;
+    cursor: pointer;
+    border-width:0px;
+}
+
+.btnright:hover {
+    color: black;
+    background-image:linear-gradient(135deg, #9b59b6,  #71b7e6);
+    box-shadow: 0 5px 10px rgba(0,0,0,0.15);
+    border-width:0px;
+
+}
+.right a{
+    text-decoration: none;
+}
+
+/* Home Section  */
+#home{
+    display: flex;
+    flex-direction:column;
+    padding:3px 200px;
+    justify-content: center;
+    align-items: center;
+    height: 701px;
+}
+
+#home::before{
+    content:" ";
+    background:url('./img_home/bg2.jpg') no-repeat center center/cover;
+    position:absolute;
+    top:0px;
+    left:0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity:0.87;
+}
+#home h1{
+    color: black;
+    text-align: center;
+    font-family: 'Knewave', cursive;
+    font-family: 'Righteous', cursive;
+}
+#home p{
+    color: black;
+    text-align: center;
+    font-size: 1.7rem;
+    font-family: 'Baloo Bhai 2', cursive;
+   
+}
+.search{
+    height: 225px;
+}
+.search:focus { outline: none; }
+.search input{
+    float: right;
+    color: deepskyblue;
+    padding: 7px 71px;
+    border-radius: 23px;
+    font-size: 23px;
+    text-align: center;
+    font-family: 'Baloo Bhai 2', cursive;
+   
+}
+
+/* Slider */
+.slidershow{
+    width: 700px;
+    height: 400px;
+    overflow: hidden;
+   }
+   
+   .middle{
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+   }
+   
+   .body-slider{
+       height: 500px;
+       margin-top: -48px;
+       margin-bottom: 40px;
+       background:linear-gradient(120deg, #a643e7, #9b59b6, #5989e2);
+       padding-top: 5px;
+       padding-bottom: 15px;
+   }
+   
+   h4.h-primary-slider{
+       height: 50px;
+       font-family: 'Knewave', cursive;
+       font-family: 'Righteous', cursive;
+       font-size: 5rem;
+       padding-top: 3px;
+       margin-top: -55px;
+       margin-bottom: 10px;
+       box-shadow: 0 0px 10px 10px rgba(0,0,0.25);
+   }
+   
+   .navigation{
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+   }
+   
+   .bar{
+    width: 50px;
+    height: 10px;
+    border: 2px solid #fff;
+    margin: 6px;
+    cursor: pointer;
+   }
+   
+   .bar:hover{
+    background: #fff;
+   }
+   
+   input[name="r"]{
+    position: absolute;
+    visibility: hidden;
+   }
+   
+   .slides{
+    width: 600%;
+    height: 100%;
+    display: flex;
+   }
+   
+   .slide{
+    width: 20%;
+    transition: 0.6s;
+   }
+   
+   .slide img{
+    height: 100%;
+    position: relative;
+    left:40px;
+   }
+   
+   #r1:checked~.s1{
+    margin-left: 0;
+   }
+   #r2:checked~.s1{
+    margin-left: -20%;
+   }
+   #r3:checked~.s1{
+    margin-left: -40%;
+   }
+
+/* Utility Classes  */
+.h-primary{
+    font-family: 'Knewave', cursive;
+    font-family: 'Righteous', cursive;
+    font-size: 3.7rem;
+    padding: 12px;
+}
+.h-secondary{
+    font-family: 'Knewave', cursive;
+    font-family: 'Righteous', cursive;
+    font-size: 2.2rem;
+    padding: 12px;
+}
+
+.center{
+    text-align: center;
+}
+
+
+.h-primarymod{
+    font-family: 'Knewave', cursive;
+    font-family: 'Righteous', cursive;
+    font-size: 3.7rem;
+    margin-top: 99px;
+    padding: 5px;
+}
+
+
+hr{
+    background-color:linear-gradient(135deg, #71b7e6, #9b59b6);
+    height:10px;
+    border:none;
+    margin-top:-20px;
+}
+
+#offers-section
+{
+  position: relative;
+ }
+
+/* footer sections */
+
+.inner-footer{
+    margin: 0;
+    padding: 0;
+    background-color: #272727;
+    height: 175px;
+}
+
+.social-links{
+    display: flex;
+}
+
+.social-links ul{
+    padding: 27px;
+    display: flex;
+    width: 300px;
+    height: 30px;
+    margin: auto;
+}
+.social-items{
+    list-style: none;
+}
+.social-items a{
+    padding: 10px 20px;
+    font-size: 35px;
+    color: #6cccc6;
+    transition: all .25s;
+
+}
+.social-items a:hover{
+    color: #54a39e;
+}
+.quick-links{
+    font-family: 'Knewave', cursive;
+    font-family: 'Righteous', cursive;
+    display: flex;
+    width: 731px;
+    /* height: 70px; */
+    margin: auto;
+}
+.quick-links ul{
+    display: flex;
+}
+.quick-items{
+    font-family: 'Knewave', cursive;
+    font-family: 'Righteous', cursive;
+    list-style: none;
+}
+.quick-items a{
+    text-decoration: none;
+    padding: 0px 15px;
+    font-size: 20px;
+    color: white;
+    transition: all .25s;
+}
+.quick-items a:hover{
+    color: #6cccc6;
+}
+.comment {
+    font-family: 'Knewave', cursive;
+    font-family: 'Righteous', cursive;
+    padding: 10px;
+    border-left: 6px solid #6cccc6;
+    background-color: white;
+    font-size: 20px;
+    position: relative;
+    /* margin: 1px -135px; */
+    left: 1151px;
+    top: -91px;
+    height: 56px;
+    width: 251px;
+  }
+.submit-btn{
+    font-family: 'Knewave', cursive;
+    font-family: 'Righteous', cursive; 
+    background-color: white;
+    position: relative;
+    /* margin: 1px -135px; */
+    left: 869px;
+    top: -55px;
+    width: 280px;
+    font-size: 20px;
+    border-radius: 32px;
+    font-size: 20px;
+}
+.submit-btn:hover{
+    background-color: #6cccc6;
+}
+.outer-footer{
+    padding: 15px;
+    text-align: center;
+    font-size: 18px;
+    color: white;
+    font-size: 18px;
+    background-color: #3f3f3f;
+}

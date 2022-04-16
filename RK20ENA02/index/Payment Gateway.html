@@ -1,0 +1,113 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Payment Form</title>
+		<link rel="stylesheet" href="payment.css">
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+	</head>
+<body>
+	<header>
+        <nav id="navbar">
+            <div id="logo">
+                <a href="homepage.html">
+                <img src="logo.png" alt="SSEWS">
+                </a>
+            </div>
+            <ul>
+                <li class="item"><a href="homepage.html">Home</a></li>
+                <li class="item"><a href="#">About Us</a></li>
+                <li class="item"><a href="getinvolved.html">Get Involved</a></li>
+                <li class="item"><a href="contact.html" class="active">Contact Us</a></li>
+            </ul>
+    </header>
+	<div class="center">
+		<div class="donate">
+			<a href="#popup1" class="btndonate">Donate</a>
+		</div>
+                    <div id="popup1" class="overlay">
+						<div class="container">
+							<div class="popup"><a class="close" href="homepage.html">&times;</a></div>
+							<h1>Confirm Your Payment</h1>
+							<div class="first-row">
+							   <div class="owner">
+								 <h3>Owner</h3>
+								 <div class="input-field">
+								<input type="text">
+								 </div>
+							  </div>
+							  <div class="cvv">
+								 <h3>CVV</h3>
+								 <div class="input-field">
+								<input type="password">
+								 </div>
+							  </div>
+							</div>
+							<div class="second-row">
+							   <div class="card-number">
+								 <h3>Card Number</h3>
+								 <div class="input-field">
+								<input type="text">
+								 </div>
+							  </div>
+							</div>
+							<div class="third-row">
+								 <h3>Expiry Date</h3>
+								 <div class="selection">
+									<div class="date">
+								   <select name="months" id="months">
+									  <option value="Jan">Jan</option>
+									  <option value="Feb">Feb</option>
+									  <option value="Mar">Mar</option>
+									  <option value="Apr">April</option>
+									  <option value="May">May</option>
+									  <option value="Jun">Jun</option>
+									  <option value="Jul">Jul</option>
+									  <option value="Aug">Aug</option>
+									  <option value="Sep">Sep</option>
+									  <option value="Oct">Oct</option>
+									  <option value="Nov">Nov</option>
+									  <option value="Dec">Dec</option>
+									</select>
+									<select name="years" id="years">
+									   <option value="2021">2021</option>
+									   <option value="2022">2022</option>
+									   <option value="2023">2023</option>
+									   <option value="2024">2024</option>
+									   <option value="2025">2025</option>
+									   <option value="2026">2026</option>
+									</select>
+								</div>
+								<div class="cards">
+									<img src="./img-payment/mc.png" alt="Master Card">
+									<img src="./img-payment/vi.png" alt="Visa">
+									<img src="./img-payment/pp.png" alt="PayPal">
+								</div>
+								 </div>
+							</div>
+							  <!--a href="#popup1" class="btn">
+									Confirm
+								</a>
+								<div id="popup1" class="overlay">
+									  <div class="popup">
+										<h2>Payment Recieved</h2>
+										<a class="close" href="../index/index_home.html">&times;</a>
+										<div class="content">
+										  Your order has been successfully placed.
+										</div>
+									  </div>
+									</div-->
+							 </div>
+                        <!--div class="popup">
+                            <h2>Thank You For Volunteering!</h2>
+                            <a class="close" href="homepage.html">&times;</a>
+                            <div class="content">
+                             We will reach out to you shortly.
+                        </div>
+                    </div-->
+                  </div>
+    
+	</div>
+</body>
+</html>

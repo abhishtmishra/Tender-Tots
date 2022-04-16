@@ -1,0 +1,251 @@
+ul{
+    list-style-type: none;
+    margin: 0px;
+    margin-left:-10px;
+    margin-top:-8px;
+    height:30px;
+    padding-bottom: 10px;
+    width:100%;
+    overflow: hidden;
+    border: 1px solid #e7e7e7;
+    background-color: #f3f3f3;
+    float: center;
+    position: sticky;
+    top:0;
+  }
+
+.active
+{
+    background-color:black;
+    color: white;
+}
+
+iframe:focus {
+     outline: none;
+}
+
+iframe[seamless] {
+display: block;
+}
+
+.grid-container{
+    display:grid;
+    grid-template-columns: auto auto auto;
+    background:white;
+    padding: 10px;
+    border-radius:5px;            
+}
+
+.item{
+    grid-row-start: 1;
+    grid-row-end: 3;
+    font-family: "Knewawe", cursive;
+    font-family: "Righteous", cursive;
+}
+
+
+div.box{
+    box-shadow:0px 10px 15px 5px rgba(0,0,0,0.15);
+    width:93%;
+    margin-left:60px;
+    margin-right:60px;
+    border-radius:5px;
+}
+
+div.box-special{
+    margin-top:10px;
+    box-shadow:0px 10px 15px 5px rgba(0,0,0,0.12);
+    width:93%;
+    margin-left:60px;
+    margin-right:60px;
+    border-radius:15px;
+}
+
+.button {
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1rem;
+    margin: 2px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border-radius:5px;
+    font-family:'Roboto', sans-serif;
+    font-weight:bold;
+}
+
+.button1 {
+    background-color: #6ccfcc;  
+    border: 2px solid #6ccfcc;
+}
+
+.button1:hover {
+    background-color: #6ccfcc;
+    color: white;
+    font-weight:bold;
+    box-shadow:0px 3px 3px 3px rgba(0,0,0,0.15);
+}
+
+img{
+    border-radius:5px
+}
+
+
+#navbar ul{
+    display: flex;
+    font-family: 'Knewave', cursive;
+    font-family: 'Righteous', cursive;
+    background-color: black;
+    border-width:0px;
+    box-shadow:0px 10px 10px 5px black;
+}
+#navbar::before{
+   content:" ";
+   position: absolute;
+   top:0px;
+   left:0px;
+   height: 100%;
+   width: 100%;
+   z-index: -1;
+   opacity:0.45;
+   position: sticky;   
+   }
+   
+#navbar ul li{
+    list-style: none;
+    font-size: 1.43rem;
+    padding-left:10px;
+    padding-bottom:-3px;
+    height:30px;  
+    padding-top:0px; 
+    margin-left:10px;
+    }
+
+#navbar ul li a{
+    color: white;
+    display:block;
+    padding-right:32px;
+    padding-left:32px;
+    padding-top:5px;
+    padding-bottom:11px;
+    background-color: black;
+    text-decoration: none;
+    border-radius:5px;
+    text-align: center;
+    margin-top:2px;
+    margin-bottom:5px;
+}
+
+#navbar ul li:active{
+    padding-top:1px;
+}
+
+#navbar ul li a:hover,
+#navbar ul li a.active{
+    color: black;
+    background-color : white;
+    padding-right: 32px;
+    padding-left:32px;
+    padding-top: 1px;
+    padding-bottom:4px;
+    margin-top:5px;
+    height:25px;
+}
+#navbar ul li a:hover:not(.active) {
+    color:black;
+  }
+
+
+#navbar2 ul{
+    display: flex;
+    font-family: 'Knewave', cursive;
+    font-family: 'Righteous', cursive;
+    top:0;
+    background-color: white;
+    border:white;
+    height:60px;
+    border-width:0px;
+    border-color:black;
+    box-shadow:0px 10px 10px 5px black;
+}
+#navbar2::before{
+   content:" ";
+   position: absolute;
+   top:0px;
+   left:0px;
+   height: 100%;
+   width: 100%;
+   z-index: -1;
+   opacity:0.45;
+   position: sticky;
+}
+   
+#navbar2 ul li{
+    list-style: none;
+    font-size: 1.43rem;
+    padding-left:15px;
+    padding-bottom:9px;
+}
+#navbar2 ul li a{
+    color: black;
+    display:block;
+    padding-right: 32px;
+    padding-left:32px;
+    padding-top:3px;
+    padding-bottom:11px;
+    background-color: white;
+    text-decoration: none;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    text-align: center;
+    margin-top:3px;
+    margin-bottom:5px;
+}
+#navbar2 ul li a:hover,
+#navbar2 ul li a.active{
+    color: white;
+    background-color : black;
+    padding-right: 32px;
+    padding-left:32px;
+    padding-top: 2px;
+    padding-bottom:4px;
+    margin-top:5px;
+    height:25px;
+}
+#navbar2 ul li a:hover:not(.active) {
+    color:white;
+  }
+
+  body{
+    width:1481px; 
+    background:linear-gradient(120deg, #a643e7, #9b59b6, #5989e2);
+  }
+
+
+  a:link {
+    color: white;
+    background-color: transparent;
+    text-decoration: none;
+  }
+  
+  a:visited {
+    color: white;
+    background-color: transparent;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    color: white;
+    background-color: transparent;
+    text-decoration: none;
+  }
+  
+  a:active {
+    color: white;
+    background-color: transparent ;
+    text-decoration: none;
+  }
+  
